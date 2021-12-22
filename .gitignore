@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+*.exec
+Minecraft
+
+
+# Extra
+.DS_Store
