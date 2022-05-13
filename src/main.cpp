@@ -3,6 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 #include <iostream>
+#include <glm/glm.hpp>
 
 // Variables
 #define SCREEN_WIDTH 1280
@@ -91,6 +92,7 @@ int main(void)
     // The game loop
     while (!glfwWindowShouldClose(window))
     {
+
         // Set the clear color
         glClearColor(0.980392, 0.466667, 0.431373, 1);
 
@@ -110,8 +112,7 @@ int main(void)
         if (present == GLFW_TRUE)
         {
             int axesCount;
-            const float* axes = glfwGetJoystickAxes(GLFW_JOYSTICK_1, &axesCount);
-        }
+            const float* axes = glfwGetJoystickAxes(GLFW_JOYSTICK_1, &axesCount);        }
     }
 
     // Terminate the window
